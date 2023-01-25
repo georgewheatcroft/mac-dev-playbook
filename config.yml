@@ -1,0 +1,72 @@
+
+#some good options in his config, but not to my tastes
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+
+configure_sudoers: false
+
+
+homebrew_installed_packages:
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - gifsicle
+  - git
+  - github/gh/gh
+  - go
+  - gpg
+  - fzf
+  - httpie
+  - iperf
+  - libevent
+  - sqlite
+  - mcrypt
+  - nmap
+  - node
+  - nvm
+  - php
+  - ssh-copy-id
+  - cowsay
+  - readline
+  - openssl
+  - pv
+  - telnet
+  - wget
+  - wrk
+  - coreutils 
+  - findutils 
+  - gnu-tar 
+  - gnu-sed 
+  - gawk 
+  - gnutls 
+  - gnu-indent 
+  - gnu-getopt 
+  - grep
+
+homebrew_cask_apps:
+  - chromedriver
+  - firefox
+  - google-chrome
+  - handbrake
+  - licecap
+  - slack
+  - iterm2
+
+
+mas_installed_apps:
+  - { id: 497799835, name: "Xcode" }
+
+composer_packages: []
+
+gem_packages: []
+
+npm_packages:
+  - name: webpack
+
+pip_packages: []
+
+configure_dock: false
+dockitems_remove: []
+dockitems_persist: []
