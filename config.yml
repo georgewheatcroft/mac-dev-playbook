@@ -10,11 +10,13 @@ configure_sudoers: false
 homebrew_installed_packages:
   - autoconf
   - bash-completion
+  - bat
   - doxygen
   - gettext
   - gifsicle
   - git
   - github/gh/gh
+  - warrensbox/tap/tfswitch
   - go
   - gpg
   - fzf
@@ -26,7 +28,6 @@ homebrew_installed_packages:
   - nmap
   - node
   - nvm
-  - php
   - ssh-copy-id
   - cowsay
   - readline
@@ -44,6 +45,7 @@ homebrew_installed_packages:
   - gnu-indent 
   - gnu-getopt 
   - grep
+  - neovim
 
 homebrew_cask_apps:
   - chromedriver
@@ -55,8 +57,8 @@ homebrew_cask_apps:
   - iterm2
 
 
-mas_installed_apps:
-  - { id: 497799835, name: "Xcode" }
+mas_installed_apps: []
+#  - { id: 497799835, name: "Xcode" }
 
 composer_packages: []
 
@@ -67,6 +69,28 @@ npm_packages:
 
 pip_packages: []
 
-configure_dock: false
-dockitems_remove: []
-dockitems_persist: []
+configure_dock: true
+dockitems_remove: 
+  - "Contacts"
+  - "Safari"
+  - "Launchpad"
+  - "Photos"
+  - "FaceTime"
+  - "Freeform"
+  - "TV"
+  - "Music"
+  - "Maps"
+  - "Podcasts"
+  - "News"
+  - "App Store"
+
+dockitems_persist:
+  - name: "iTerm"
+    path: "/Applications/iTerm.app/"
+    pos: 2
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 3
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
+    pos: 4
