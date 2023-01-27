@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - mcrypt
   - nmap
   - node
+  - neofetch
   - nvm
   - ssh-copy-id
   - cowsay
@@ -46,19 +47,23 @@ homebrew_installed_packages:
   - gnu-getopt 
   - grep
   - neovim
+  - terraform
 
 homebrew_cask_apps:
   - chromedriver
   - firefox
   - google-chrome
+    # TODO: currently doesnt work - homebrew/cask-fonts/font-hack-nerd-font-mono
   - handbrake
   - licecap
   - slack
   - iterm2
 
 
+    
+  #requires one to have apple id in advance - I never have my own
 mas_installed_apps: []
-#  - { id: 497799835, name: "Xcode" }
+  # - { id: 993841014, name: "CopyLess 2 - Clipboard Manager" }
 
 composer_packages: []
 
@@ -67,7 +72,12 @@ gem_packages: []
 npm_packages:
   - name: webpack
 
-pip_packages: []
+pip_packages:
+  - pynvim
+  - botocore
+  - awscli
+  - aws_completer
+  - pipenv
 
 configure_dock: true
 dockitems_remove: 
