@@ -53,6 +53,7 @@ homebrew_installed_packages:
   - the_silver_searcher
   - speedtest-cli
   - leapp-cli
+  - gopls
 
 homebrew_cask_apps:
   - chromedriver
@@ -78,14 +79,22 @@ composer_packages: []
 
 gem_packages: []
 
+#TODO get all the lsp servers using lsp-lazy instead in nvim
 npm_packages:
   - name: webpack
+    # state: latest
+  - name: bash-language-server
+    # state: present
+    # version: "server-4.6.1"
+  - name: pyright
+    # state: present
+    # version: "1.1.292"
 
 pip_packages:
   - pynvim
   - botocore
   - awscli
-  - aws_completer
+  #TODO fix - aws_completer
   - pipenv
 
 configure_dock: true
