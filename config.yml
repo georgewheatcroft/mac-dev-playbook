@@ -53,6 +53,8 @@ homebrew_installed_packages:
   - the_silver_searcher
   - speedtest-cli
   - leapp-cli
+  - kubectx
+  #TODO get all the lsp servers using lsp-lazy instead in nvim
   - gopls
 
 homebrew_cask_apps:
