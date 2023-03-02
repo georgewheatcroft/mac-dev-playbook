@@ -54,6 +54,7 @@ homebrew_installed_packages:
   - speedtest-cli
   - leapp-cli
   - kubectx
+  - tree
   #TODO get all the lsp servers using lsp-lazy instead in nvim
   - gopls
 
@@ -69,6 +70,7 @@ homebrew_cask_apps:
   - wireshark
   - notunes
   - session-manager-plugin
+  - discord
   - leapp
 
 
@@ -91,6 +93,7 @@ npm_packages:
   - name: pyright
     # state: present
     # version: "1.1.292"
+  - name: yaml-language-server
 
 pip_packages:
   - pynvim
