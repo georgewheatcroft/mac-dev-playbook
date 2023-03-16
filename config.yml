@@ -1,8 +1,9 @@
-
 #some good options in his config, but not to my tastes
 configure_dotfiles: false
 configure_terminal: false
 configure_osx: false
+
+#TODO some way of disabling system shortcuts that get in the way such as the ctrl-space shortcut in system prefs
 
 configure_sudoers: false
 
@@ -55,6 +56,7 @@ homebrew_installed_packages:
   - leapp-cli
   - kubectx
   - tree
+  - sqlc
   #TODO get all the lsp servers using lsp-lazy instead in nvim
   - gopls
 
