@@ -48,7 +48,6 @@ homebrew_installed_packages:
   - gnu-getopt 
   - grep
   - neovim
-  - terraform
   - mtr
   - ripgrep
   - the_silver_searcher
@@ -59,6 +58,7 @@ homebrew_installed_packages:
   - sqlc
   #TODO get all the lsp servers using lsp-lazy instead in nvim
   - gopls
+  - lua-language-server
 
 homebrew_cask_apps:
   - chromedriver
@@ -74,6 +74,7 @@ homebrew_cask_apps:
   - session-manager-plugin
   - discord
   - leapp
+  - spotify
 
 
     
