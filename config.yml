@@ -59,6 +59,7 @@ homebrew_installed_packages:
   #TODO get all the lsp servers using lsp-lazy instead in nvim
   - gopls
   - lua-language-server
+  
 
 homebrew_cask_apps:
   - chromedriver
@@ -97,6 +98,7 @@ npm_packages:
     # state: present
     # version: "1.1.292"
   - name: yaml-language-server
+  - name: vscode-css-languageservice
 
 pip_packages:
   - pynvim
