@@ -98,7 +98,8 @@ npm_packages:
     # state: present
     # version: "1.1.292"
   - name: yaml-language-server
-  - name: vscode-css-languageservice
+  - name: vscode-langservers-extracted
+
 
 pip_packages:
   - pynvim
