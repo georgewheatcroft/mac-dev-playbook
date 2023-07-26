@@ -7,10 +7,10 @@ configure_osx: false
 
 configure_sudoers: false
 
-
 homebrew_installed_packages:
   - autoconf
   - bash-completion
+  - bash-completion@2
   - bat
   - doxygen
   - gettext
@@ -55,7 +55,30 @@ homebrew_installed_packages:
   - leapp-cli
   - kubectx
   - tree
+  - consul
+  - yarn
+  - yarn-completion
+  - vault
+  - helm
+  - yamllint
+  - jq
+  - k9s
+  - figlet
+  - lua-language-server
+  - kcat
+  - findutils
+  - netcat
+  - onefetch
+  - openapi-generator
+  - openvpn
+  - pyenv
+  - rust
+  - shellcheck
+  - terraform-ls
+  - watch
+  - fontconfig
   - sqlc
+  - groovy
   #TODO get all the lsp servers using lsp-lazy instead in nvim
   - gopls
   - lua-language-server
@@ -63,20 +86,26 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - chromedriver
-  - firefox
-  - google-chrome
-    # TODO: currently doesnt work - homebrew/cask-fonts/font-hack-nerd-font-mono
-  - handbrake
-  - licecap
-  - slack
-  - iterm2
-  - wireshark
-  - notunes
-  - session-manager-plugin
   - discord
+  - dockutil
+  - firefox         
+  - font-hack-nerd-font 
+  - google-chrome       
+  - handbrake
+  - intellij-idea-ce    
+  - iterm2
   - leapp
+  - macfuse         
+  - notunes
+  - pgadmin4        
+  - rancher         
+  - session-manager-plugin
+  - skype           
+  - slack
   - spotify
-
+  - visual-studio-code 
+  - wireshark
+  # TODO: currently doesnt work - homebrew/cask-fonts/font-hack-nerd-font-mono
 
     
   #requires one to have apple id in advance - I never have my own
