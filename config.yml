@@ -8,6 +8,7 @@ configure_osx: false
 configure_sudoers: false
 
 homebrew_installed_packages:
+  - act
   - autoconf
   - bash-completion
   - bash-completion@2
