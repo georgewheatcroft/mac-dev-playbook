@@ -75,6 +75,7 @@ homebrew_installed_packages:
   - pyenv
   - rust
   - shellcheck
+  - stern
   - terraform-ls
   - watch
   - fontconfig
