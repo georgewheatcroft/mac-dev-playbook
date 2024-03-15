@@ -4,11 +4,13 @@ configure_terminal: false
 configure_osx: false
 
 #TODO some way of disabling system shortcuts that get in the way such as the ctrl-space shortcut in system prefs
+#TODO some way of pinning packages, and ideally of stating version of packages we want (though that is tricky - brew seems to be a bit rubbish when it comes to getting old versions of packages)
 
 configure_sudoers: false
 
 homebrew_installed_packages:
   - act
+  - aws-nuke
   - autoconf
   - bash-completion
   - bash-completion@2
@@ -81,36 +83,40 @@ homebrew_installed_packages:
   - fontconfig
   - sqlc
   - groovy
-  #TODO get all the lsp servers using lsp-lazy instead in nvim
-  - gopls
-  - lua-language-server
   
 
 homebrew_cask_apps:
+  - bitwarden
   - chromedriver
   - discord
-  - dockutil
-  - firefox         
-  - font-hack-nerd-font 
-  - google-chrome       
+  - drawio
+  - firefox
+  - gitkraken
+  - google-chrome
   - handbrake
-  - intellij-idea-ce    
+  - intellij-idea-ce
   - iterm2
   - leapp
-  - macfuse         
+  - licecap
+  - macfuse
+  - macpass
   - notunes
-  - pgadmin4        
-  - rancher         
+  - obsidian
+  - pgadmin4
+  - postman
+  - rancher
   - session-manager-plugin
-  - skype           
+  - skype
   - slack
   - spotify
-  - visual-studio-code 
+  - visual-studio-code
+  - wezterm
   - wireshark
-  # TODO: currently doesnt work - homebrew/cask-fonts/font-hack-nerd-font-mono
+  - homebrew/cask-fonts/font-hack-nerd-font
+  - hpedrorodrigues/tools/dockutil
 
     
-  #requires one to have apple id in advance - I never have my own
+#requires one to have apple id in advance - I never have my own
 mas_installed_apps: []
   # - { id: 993841014, name: "CopyLess 2 - Clipboard Manager" }
 
