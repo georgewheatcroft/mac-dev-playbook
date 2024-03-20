@@ -12,7 +12,6 @@ homebrew_installed_packages:
   - act
   - aws-nuke
   - autoconf
-  - bash-completion
   - bash-completion@2
   - bat
   - doxygen
@@ -29,7 +28,6 @@ homebrew_installed_packages:
   - iperf
   - libevent
   - sqlite
-  - mcrypt
   - nmap
   - node
   - neofetch
@@ -92,7 +90,6 @@ homebrew_cask_apps:
   - discord
   - drawio
   - firefox
-  - gitkraken
   - google-chrome
   - handbrake
   - intellij-idea-ce
