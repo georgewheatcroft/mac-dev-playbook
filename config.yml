@@ -183,3 +183,18 @@ dockitems_persist:
   - name: "Slack"
     path: "/Applications/Slack.app/"
     pos: 5
+  - name: "Reminders"
+    path: "/Applications/Reminders.app/"
+    pos: 6
+  - name: "Notes"
+    path: "/Applications/Notes.app/"
+    pos: 7
+  - name: "Calendar"
+    path: "/Applications/Calendar.app/"
+    pos: 8
+  - name: "System Settings"
+    path: "/Applications/System Settings.app/"
+    pos: 9
+  - name: "Messages"
+    path: "/Applications/Messages.app/"
+    pos: 10
