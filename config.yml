@@ -8,6 +8,9 @@ configure_osx: false
 
 configure_sudoers: false
 
+homebrew_taps:
+  - warrensbox/tap
+
 homebrew_installed_packages:
   - act
   - aws-nuke
@@ -20,7 +23,7 @@ homebrew_installed_packages:
   - gifsicle
   - git
   - gh
-  - warrensbox/tap/tfswitch
+  - tfswitch
   - go
   - gpg
   - fzf
