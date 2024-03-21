@@ -103,10 +103,12 @@ homebrew_installed_packages:
   - sqlc
   - groovy
   - simple-pass
+  - pipx
   
 
 homebrew_cask_apps:
   - bitwarden
+  - karabiner-elements
   - chromedriver
   - discord
   - drawio
@@ -137,7 +139,7 @@ homebrew_cask_apps:
 #requires one to have apple id in advance - login to app store first!
 # bash -c "mas list"
 mas_installed_apps: 
-  - { id: 993841014, name: "CopyLess 2 - Clipboard Manager" }
+  - { id: 993841014  , name: "CopyLess 2 - Clipboard Manager" }
   - { id: 1295203466  , name: "Microsoft Remote Desktop" }
   - { id: 823766827   , name: "OneDrive" }
   - { id: 302584613   , name: "Kindle" }
