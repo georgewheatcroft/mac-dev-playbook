@@ -1,13 +1,10 @@
 #some good options in his config, but not to my tastes
-# configure_dotfiles: false
 # configure_terminal: false
-# configure_osx: false
 
 configure_dotfiles: true
 dotfiles_repo: https://github.com/gfcroft/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/repos/config/dotfiles
-
 
 # just (mac) osx configuring script for now
 dotfiles_files:
@@ -27,9 +24,14 @@ homebrew_taps:
   - warrensbox/tap
   - gfcroft/homebrew-tap
 
+#### additional manual steps
+# bash - have to add to list of system shells, then chsh:
+#  don't forget to echo "$(brew --prefix)/bin/bash" | sudo tee -a /etc/shells ; then chsh -s "$(brew --prefix)/bin/bash"
+
 homebrew_installed_packages:
   - act
   - autoconf
+  - bash 
   - bash-completion@2
   - bat
   - doxygen
