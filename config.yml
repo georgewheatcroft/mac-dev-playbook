@@ -1,7 +1,19 @@
 #some good options in his config, but not to my tastes
-configure_dotfiles: false
-configure_terminal: false
-configure_osx: false
+# configure_dotfiles: false
+# configure_terminal: false
+# configure_osx: false
+
+configure_dotfiles: true
+dotfiles_repo: https://github.com/gfcroft/dotfiles.git
+
+# just (mac) osx configuring script for now
+dotfiles_files:
+  - .osx
+
+configure_osx: true
+osx_script: "~/.osx --no-restart"
+
+
 
 #TODO some way of disabling system shortcuts that get in the way such as the ctrl-space shortcut in system prefs
 #TODO some way of pinning packages, and ideally of stating version of packages we want (though that is tricky - brew seems to be a bit rubbish when it comes to getting old versions of packages)
@@ -10,6 +22,7 @@ configure_sudoers: false
 
 homebrew_taps:
   - warrensbox/tap
+  - gfcroft/homebrew-tap
 
 homebrew_installed_packages:
   - act
@@ -85,6 +98,7 @@ homebrew_installed_packages:
   - fontconfig
   - sqlc
   - groovy
+  - simple-pass
   
 
 homebrew_cask_apps:
@@ -170,6 +184,7 @@ dockitems_remove:
   - "News"
   - "App Store"
 
+# sometimes the ordering works, sometimes it doesn't ?!
 dockitems_persist:
   - name: "Mail"
     path: "/System/Applications/Mail.app"
