@@ -5,6 +5,9 @@
 
 configure_dotfiles: true
 dotfiles_repo: https://github.com/gfcroft/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/repos/config/dotfiles
+
 
 # just (mac) osx configuring script for now
 dotfiles_files:
@@ -26,7 +29,6 @@ homebrew_taps:
 
 homebrew_installed_packages:
   - act
-  - aws-nuke
   - autoconf
   - bash-completion@2
   - bat
