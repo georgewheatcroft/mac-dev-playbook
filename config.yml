@@ -135,6 +135,7 @@ homebrew_cask_apps:
 
     
 #requires one to have apple id in advance - login to app store first!
+# NOTE - the apple id that is used MUST already "own" these apps or install will fail
 # bash -c "mas list"
 mas_installed_apps: 
   - { id: 993841014, name: "CopyLess 2 - Clipboard Manager" }
