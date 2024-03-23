@@ -4,7 +4,7 @@
 configure_dotfiles: true
 dotfiles_repo: https://github.com/gfcroft/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/repos/config/dotfiles
+dotfiles_repo_local_destination: ~/repos/configs/dotfiles
 
 # just (mac) osx configuring script for now
 dotfiles_files:
@@ -104,7 +104,8 @@ homebrew_installed_packages:
   - groovy
   - simple-pass
   - pipx
-  
+  - stylua
+  - htop
 
 homebrew_cask_apps:
   - bitwarden
@@ -134,6 +135,7 @@ homebrew_cask_apps:
   - wezterm
   - wireshark
   - homebrew/cask-fonts/font-hack-nerd-font
+  - thunderbird
 
     
 #requires one to have apple id in advance - login to app store first!
@@ -192,11 +194,11 @@ dockitems_remove:
 
 # sometimes the ordering works, sometimes it doesn't ?!
 dockitems_persist:
-  - name: "Mail"
-    path: "/System/Applications/Mail.app"
+  - name: "Thunderbird"
+    path: "/System/Applications/Thunderbird.app"
     pos: 2
-  - name: "iTerm"
-    path: "/Applications/iTerm.app/"
+  - name: "WezTerm"
+    path: "/Applications/WezTerm.app/"
     pos: 3
   - name: "Google Chrome"
     path: "/Applications/Google Chrome.app/"
