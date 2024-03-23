@@ -14,6 +14,7 @@ This playbook installs and configures most of the software I use on my Mac for w
      1. Run the following command to add Python 3 to your $PATH: `export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"`
      2. Upgrade Pip: `sudo pip3 install --upgrade pip`
      3. Install Ansible: `pip3 install ansible`
+     4. GW - also (for now) check home brew version, if shallow then do `brew update` - else it won't work. if not installed  already, run the commands below & if it fails, try this step again
 
   3. Clone or download this repository to your local drive.
   4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
@@ -58,6 +59,7 @@ homebrew_installed_packages:
   - git
   - go
 
+# NOTE - the apple id that is used MUST already "own" these apps or install will fail
 mas_installed_apps:
   - { id: 443987910, name: "1Password" }
   - { id: 498486288, name: "Quick Resizer" }
