@@ -15,6 +15,7 @@ This playbook installs and configures most of the software I use on my Mac for w
      2. Upgrade Pip: `sudo pip3 install --upgrade pip`
      3. Install Ansible: `pip3 install ansible`
      4. GW - also (for now) check home brew version, if shallow then do `brew update` - else it won't work. if not installed  already, run the commands below & if it fails, try this step again
+     5. GW - if you hae a private dotfiles repo (like me) you will need to obviously set up the credentials (ssh key?) on your machine first to allow that to be accessed
 
   3. Clone or download this repository to your local drive.
   4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
