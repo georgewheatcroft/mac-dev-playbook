@@ -13,8 +13,6 @@ dotfiles_files:
 configure_osx: true
 osx_script: "~/.osx --no-restart"
 
-
-
 #TODO some way of disabling system shortcuts that get in the way such as the ctrl-space shortcut in system prefs
 #TODO some way of pinning packages, and ideally of stating version of packages we want (though that is tricky - brew seems to be a bit rubbish when it comes to getting old versions of packages)
 
@@ -31,7 +29,7 @@ homebrew_taps:
 homebrew_installed_packages:
   - act
   - autoconf
-  - bash 
+  - bash
   - bash-completion@2
   - bat
   - doxygen
@@ -60,14 +58,14 @@ homebrew_installed_packages:
   - telnet
   - wget
   - wrk
-  - coreutils 
-  - findutils 
-  - gnu-tar 
-  - gnu-sed 
-  - gawk 
-  - gnutls 
-  - gnu-indent 
-  - gnu-getopt 
+  - coreutils
+  - findutils
+  - gnu-tar
+  - gnu-sed
+  - gawk
+  - gnutls
+  - gnu-indent
+  - gnu-getopt
   - grep
   - neovim
   - mtr
@@ -106,6 +104,7 @@ homebrew_installed_packages:
   - pipx
   - stylua
   - htop
+  - oci-cli
 
 homebrew_cask_apps:
   - bitwarden
@@ -135,18 +134,16 @@ homebrew_cask_apps:
   - wezterm
   - wireshark
   - homebrew/cask-fonts/font-hack-nerd-font
-  - thunderbird
+  - rectangle
 
-    
 #requires one to have apple id in advance - login to app store first!
 # NOTE - the apple id that is used MUST already "own" these apps or install will fail
 # bash -c "mas list"
-mas_installed_apps: 
-  - { id: 993841014  , name: "CopyLess 2 - Clipboard Manager" }
-  - { id: 1295203466  , name: "Microsoft Remote Desktop" }
-  - { id: 823766827   , name: "OneDrive" }
-  - { id: 302584613   , name: "Kindle" }
-
+mas_installed_apps:
+  - {id: 993841014, name: "CopyLess 2 - Clipboard Manager"}
+  - {id: 1295203466, name: "Microsoft Remote Desktop"}
+  - {id: 823766827, name: "OneDrive"}
+  - {id: 302584613, name: "Kindle"}
 
 composer_packages: []
 
@@ -165,9 +162,8 @@ npm_packages:
   - name: yaml-language-server
   - name: vscode-langservers-extracted
 
-
 # TODO need to implement pipx to get around new PEP 668 constraint that breaks this
-# for now, pipx them 
+# for now, pipx them
 # pip_packages:
 #   - name: pynvim
 #     state: present
@@ -179,7 +175,7 @@ npm_packages:
 #     state: present
 
 configure_dock: true
-dockitems_remove: 
+dockitems_remove:
   - "Contacts"
   - "Safari"
   - "Launchpad"
@@ -195,8 +191,8 @@ dockitems_remove:
 
 # sometimes the ordering works, sometimes it doesn't ?!
 dockitems_persist:
-  - name: "Thunderbird"
-    path: "/System/Applications/Thunderbird.app"
+  - name: "Mail"
+    path: "/System/Applications/Mail.app"
     pos: 2
   - name: "WezTerm"
     path: "/Applications/WezTerm.app/"
