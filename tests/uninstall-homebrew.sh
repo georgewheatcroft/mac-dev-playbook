@@ -14,5 +14,7 @@ sudo rm -rf /usr/local/bin/brew
 
 
 # GW go the whole hog
-[ -d /opt/homebrew ] && sudo rm -rf /opt/homebrew
+if [ -d /opt/homebrew ] ; then
+    sudo rm -rf /opt/homebrew
+fi
 
