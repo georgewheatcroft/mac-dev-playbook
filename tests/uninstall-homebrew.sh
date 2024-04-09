@@ -11,3 +11,8 @@ sudo ./uninstall.sh --force
 sudo rm -rf /usr/local/Homebrew
 sudo rm -rf /usr/local/Caskroom
 sudo rm -rf /usr/local/bin/brew
+
+
+# GW go the whole hog
+[ -d /opt/homebrew ] && sudo rm -rf /opt/homebrew
+
