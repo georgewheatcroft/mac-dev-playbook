@@ -36,8 +36,8 @@ jobs:
     strategy:
       matrix:
         os:
-          - macos-14
           - macos-13
+          # - macos-14 # broken - homebrew installed is shallow for some reason and appears unable to perform cask installation
 
     steps:
       - name: Check out the codebase.
